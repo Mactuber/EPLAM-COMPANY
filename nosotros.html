@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css"> <!--Aquí hay un css-->
+    <link rel="icon" href="IMG/icon_color-03.svg">  <!--Aquí hay un icono-->
+    <title>https://eplam.com</title>
+</head>
+<body>  
+<div class="container"> <!--Aquí estará el contenedor donde trabajamos todo el Área_del_cliente-->
+<header>
+        <nav><a href="index.html"><img class="logo" src="IMG/EPLAM-03.svg" alt=""></a> <!--Aquí va la imagen del logo-->
+    <ul class="cont-ul"> <!--Aquí va el menú-->
+        <li class="cursos"><a href="cursos.html">Cursos</a>
+        <ul class="ul-second">
+            <li><a href="curso_ciberseguridad.html">Ciberseguridad </a></li>
+            <li><a href="curso_hardwarehacking.html">Hardware-hacking</a></li>
+            <li><a href="curso_programacion.html">Programación</a></li>
+            <li><a href="curso_linuxbasics.html">Linux Basics </a></li>
+        </ul>
+        </li>
+        <li><a href="trabaja.html">Trabaja con Nosotros</a> </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+    <div class="search-box">
+            <input class="search-input" type="text" name="" placeholder="">
+            <a href="#" class="search-btn">
+            <i class="fas fa-search"></i> <!--Hasta aquí se ha realizado un input search para que el usuario pueda buscar el contenido que necesite en la página.-->
+            </a>     
+    </div>
+            <div><a href="Area_cliente.html"><img class="user_area" src="IMG/perfil_icon.svg" alt="usuario"></a></div><!--Área del cliente-->
+       </nav>
+</header>
+        
+        <div class="section_A"> <!--Contiene la imagen de la persona sonriendo con fondo morado y h1 blanco. Tiene fondo morado-->
+            <div class="foto_unon"><img src="IMG/foto_nosotros.jpg" alt="persona"></div><!--Esta es la imagen de la persona de arriba sonriendo, tal vez con un z-index se puede sobreponer la imagen con la sección de abajo-->
+            <div class="texto_uno_nosotros">
+            <h1>LA TECNOLOGÍA AL ALCANCE DE TODOS</h1>
+            </div>
+        </div>
+
+        <div class="section_B"> <!--Esta seccion tendrá una pequeña parte de la foto de arriba y los textos correspondientes con un fondo blanco-->
+            <h2>La tienda virtual de aprendizaje y enseñanza tecnológica líder</h2>
+            <p class=>Al conectar estudiantes de todo el mundo con los mejores instructores, Eplam ayuda a las personas a alcanzar sus metas y perseguir sus sueños.</p>
+        </div>
+
+        <div class="section_C"> <!--Esta sección tendrá un vídeo, un h1 y un párrafo con fondo gris muy claro-->
+            <div class="video_uno"><iframe width="560px" height="315px" src="https://www.youtube.com/embed/qdIFN6Esz0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <!--Aquí estará el vídeo con un h1 y un texto-->
+
+            <h1>Transformamos vidas.</h1>
+            <p>Inspirados por esa dinámica comunidad de profesionales, Eplam decidió ir más allá y producir cursos online para cualquier persona interesada en explorar su potencial tecnologico, aprender nuevas habilidades y conectar con tecnicos de todo el mundo con los mismos intereses</p>
+        </div>
+
+        <div class="section_D"> <!--Esta sección tendrá fondo morado, un h1, un párrafo y 6 divs bien posicionados -->
+            <h2>Nuestro alcance Global</h2>
+            <p class="white">Eplam es la tienda virtual de enseñanza y aprendizaje tecnológico líder, y conecta a estudiantes de todas partes con la mejor enseñanza del mundo</p>
+
+            <!--Aquí se tendrá que jugar con posiciones en css-->
+            <div class="container_n">
+            <div class="n_44"><h1>44 mil</h1><br>Estudiantes</div>
+            <div class="n_46"><h1>465</h1><br> Inscripciones diarias</div>
+            <div class="n_15"><h1>1500</h1><br> Instructores</div>
+            <div class="n_25"><h1>20</h1><br> Idiomas</div>
+            <div class="n_12"><h1>12544</h1><br> Cursos</div>
+            <div class="n_45"><h1>4500</h1><br> Clientes empresariales</div>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container_footer">
+        <div class="logo_footer"><img src="IMG/logo_footer.svg" alt="logo"></div><!--Esto es el logo entre el footer y la estructura principal de la página-->
+        <div class="box__footer">
+            <a href="cursos.html">Cursos</a> <!--Primera columna de links del footer-->
+            <a href="trabaja.html">Trabaja con Nosotros</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blog.html">Blog</a>    
+        </div>
+        <div class="box__footer"> <!--Segunda columna de links del footer-->
+            <a href="curso_ciberseguridad.html">Ciberseguridad</a>
+            <a href="curso_hardwarehacking.html">Hardware hacking</a>
+            <a href="curso_programacion.html">Programación</a>
+            <a href="curso_linuxbasics.html">Linux Basics</a>
+        </div>
+        <div class="box_copyright"><!--Fila de abajo del footer con los links a política de privacidad etc.-->
+            <p>Política de Privacidad</p>
+            <p>Condiciones de contratación</p>
+            <p>Política de cookies</p>
+            <p>Aviso legal</p>
+            <p>@Copyright Eplam 2022</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

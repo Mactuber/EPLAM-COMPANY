@@ -1,0 +1,2823 @@
+*{ /*ediciones generales en toda la web, que nos permitirá ajustar todo a los bordes sin dejar espacios*/
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+text-decoration: none; /*Nos permitirá quitar las lineas de hipervinculos en todas aquellas funciones que lo tenga sin la necesidad de repetir la funcion*/
+}
+.container{
+max-width: 100%;
+overflow-x: hidden;/*bloquea los espacio en blanco de los laterales*/
+overflow-y: hidden;/*bloquea los espacio en blanco de arriba y abajo*/
+
+}
+@font-face { /*letra descargada*/
+font-family:'Mustica';
+src: url(../LETRA/MusticaproSemibold-2OG5o.ttf);
+}
+@font-face { /*letra descargada*/
+font-family:'Hellix';
+src: url(../LETRA/Hellix-Black.ttf);
+}
+.linea_morada{
+background:#5400d8;
+width: 100%;
+height: 25px;
+color: white;
+font-size: 12px;
+text-align: center;
+margin: auto;
+font-family:'Mustica';
+}
+
+.linea_morada img{ /*Imagen de la "X"*/
+width: 20px;
+height: 20px;
+left: 300px;
+}
+/*configuracion de menu*/
+.logo{ /*logo de menu*/
+width: 120px;
+height: 110px;
+margin: 20px 0px;
+}
+nav{
+width: 100%;
+height: 70px;
+display: flex; /*pone flexibilidad al contenido*/
+justify-content:space-around;/*distrubuye las cajas dejando espacio por iguales entre ellas, */
+align-items: center;
+background-color: #f7f8f4;
+font-family:'Mustica';
+font-size: 16px;
+}
+input{
+background: #d3d3d3;
+border-radius: 20px;
+width: 120px;
+height: 20px;
+border:none;
+}
+.cont-ul{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+li{
+list-style: none; /*quita los puntos de las listas*/
+cursor: pointer; /*el puntero pone una mano*/
+padding: 1.5vw;
+transition: all 0.2s ease 0s; /*transiciones el numero es el tiempo de la transicion
+ease es para que vaya suave*/
+}
+li:hover{
+background-color: #1b014000;  /*Color de fondo en el menu cuando se selecciona, transparente en este caso*/
+}
+.cursos{
+position: relative;
+z-index: 1000;
+}
+.ul-second{
+display: none; /*Indica que no depende de ninguna caja*/
+position: absolute;
+margin-top: 1.5vw; 
+}
+.ul-second >li{
+width: 190px;
+transform: translateX(-12px);
+border-bottom: 1px solid #fff;
+text-align: center;
+background-color: #f7f8f4;
+}
+.ul-second>li:hover{
+background-color:  #1b014096;
+color: white;
+}
+.cursos:hover > .ul-second{
+display: block; /*sirve para desplegar el menu*/
+}
+.user_area{/*icon de usuario*/
+width: 80px;
+height: 70px;
+margin-left: 30px;
+}
+.franja_morada_uno{
+  background:#5400d8;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family:'Mustica';
+  }
+/*aqui acaba la edición del menú*/
+.section_dos{ /*contenedor de los card, para ediciones grupales de los 3 card*/
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 50px 5px;
+justify-content: space-around;
+}
+.card_uno img{
+width: 350px;
+height: 280px; 
+border-radius: 20px;
+text-align: center;
+}
+.card_uno p{
+position: absolute;
+transform: translate(35%, 850%);
+color: white;
+font-size: 17px;
+font-family:'Mustica';
+}
+.card_uno input{
+background:#5400d8; 
+border-radius: 20px;
+border: none;
+width: 100px;
+height: 30px;
+color: white;
+font-size: 15px;
+transform: translate(110%, -230%);
+cursor: pointer;
+}
+.card_dos img{
+width: 350px;
+height: 280px; 
+border-radius: 20px;
+text-align: center;
+}
+.card_dos p{
+position: absolute;
+transform: translate(15%, 850%);
+color: rgb(255, 255, 255);
+font-size: 17px;
+font-family:'Mustica';
+}
+.card_dos input{
+background:#5400d8; 
+border-radius: 20px;
+border: none;
+width: 100px;
+height: 30px;
+color: white;
+font-size: 15px;
+transform: translate(130%, -170%);
+cursor: pointer;
+}
+.card_tres img{
+width: 350px;
+height: 280px; 
+border-radius: 20px;
+text-align: center;
+}
+.card_tres p{
+position: absolute;
+transform: translate(12%, 850%);
+color: white;
+font-size: 17px;
+font-family:'Mustica';
+}
+.card_tres input{
+background:#5400d8; 
+border-radius: 20px;
+border: none;
+width: 100px;
+height: 30px;
+color: white;
+font-size: 15px;
+transform: translate(130%, -170%);
+cursor: pointer;
+}
+.franja_morada{ /*edicion de segunda franja morada debajo de las 3 cajas.*/
+background:#5400d8;
+width: 100%; 
+height: 100px;
+display: flex;
+justify-content: space-around;
+}
+.franja_morada p{
+font-size: 25px;
+text-align: center;
+color: white;
+font-family:'Mustica';
+}
+.section_tres{ /*ancho del contenedor del todo*/
+margin-top: 100px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+cursor: pointer;
+transition: all 0.3s ease-in-out;/*edicion de hover para los 3 div*/
+font-family:'Hellix';
+}
+.section_tres :hover{ /*edicion de hover para los 3 div*/
+transform: scale(1.1);
+}
+.texto_section_tres h2{
+text-align: center;
+margin-top: 40px;
+font-family:'Hellix';
+}
+.texto_section_tres p{
+text-align: center;
+color: #5400d8;
+font-family:'Mustica';
+}
+.section_tres a input{
+margin-left: 80px;
+margin-top: 50px;
+width: 120px;
+height: 30px;
+font-size: 17px;
+font-family:'Mustica';
+}
+.section_tres h2{
+text-align: center;
+margin: 40px auto;
+font-size: 25px;
+}
+.section_tres p{
+text-align: center;
+margin: 20px auto;
+font-size: 20px;
+}
+.card_precios_uno{
+background-color: #D3BDF2;
+width: 280px;
+height: 350px;
+border-radius: 20px;
+color: #5400d8;
+margin: 10px 10px;
+}
+.card_precios_uno a input{
+background: #5400d8;
+color: white;
+cursor: pointer;
+}
+.card_precios_dos{
+background-color: #5400d8;
+width: 280px;
+height: 350px;
+border-radius: 20px;
+border:5px solid #D3BDF2;
+color: white;
+margin:10px;
+}
+.card_precios_dos input{
+background-color: #ffa412;
+color: black;
+cursor: pointer;
+}
+.card_precios_tres {
+background-color: #D3BDF2;
+width: 280px;
+height: 350px;
+border-radius: 20px;
+color: #5400d8;
+margin: 10px 10px;
+}
+.card_precios_tres a input{
+background: #5400d8;
+color: white;
+cursor: pointer;
+}
+/*Empieza los div con flipcard*/
+.section_cuatro{
+margin: 80px auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+}
+.section_cuatro h1{
+font-size: 33px;
+font-family:'Hellix';
+position: absolute;
+transform: translate(10%, -150%);
+}
+.card{
+position: relative;
+width: 300px;
+height: 470px;
+margin: 10px 5px;
+margin-top: 50px;
+}
+.card .face{
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden; /*Para darle el permiso de visibilidad a la cara posterior que queremos mostrar al usuario*/
+border-radius: 20px;
+overflow: hidden;
+transition: 0.5s;
+}
+.card .front{
+transform: perspective(600px) rotateY(0deg);/*efecto de movimiento*/
+box-shadow: 0px 5px 10px #e0dfdd;
+background: #ffa412;
+}
+.card .front img{
+position: relative;
+width: 250px;
+height: 250px;
+margin: 50px 25px;
+object-fit: cover;/*Indica como el contenido del elemento debera ser redimensionado
+para ajustarse a su contenedor*/
+}
+.card .front h3{
+margin-top: 40px;
+font-size: 25px;
+color:black;
+background: #ffa412;
+text-align: center;  
+font-family:'Hellix';  
+}
+.card .back{
+transform: perspective(600px) rotateY(180deg);/*efecto de movimiento*/
+background:#ffa412;
+box-shadow: 0px 5px 10px #e0dfdd;
+padding: 45px;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: justify;
+}
+.card .back p{
+margin-top: 30px;
+font-size: 20px;
+text-align: center;
+}
+.card:hover .front{
+transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+transform: perspective(600px) rotateY(360deg);
+}
+/*Aqui acaba la configuracion de div con flipcard*/
+/*CONFIGURACION DE FAQ*/
+.container-faq{
+font-family: 'mustica';
+padding: 70px;
+}
+.container-faq .titulo-faq{
+text-align: center;
+font-size: 20px;
+margin-bottom: 30px;
+color: #ffa412;
+}
+.container-faq .item-faq{
+box-shadow: 0 0 0 15px -1px rgba(0, 0, 0.2);
+margin-bottom: 20px;
+border-radius: 10px;
+}
+.container-faq .item-faq .question{
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #d3bdf283;
+padding: 20px 20px 20px 10px;
+transition: .4s;
+}
+.container-faq .item-faq .question .more{
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 0 0 15px -1px rgba(0, 0, 0.2);
+width: 40px;
+height: 40px;
+font-size: 30px;
+cursor: pointer;
+transition: .4s;
+}
+.container-faq .item-faq .question .more:hover{
+  transform: scale(1.1);
+box-shadow: 0 0 0 15px -1px rgba(0, 0, 0.4);
+}
+.container-faq .item-faq .answer{
+padding: 0 20px 0 10px;
+}
+.container-faq .item-faq .answer p{
+font-size: 1rem;
+}
+.container-faq .item-faq .answer p:hover{
+transform: scale(1.1);
+color: #ffa412;
+}
+
+/*Configuracion del footer*/
+footer{
+width: 100%;
+background: #5400d8;
+font-family:'mustica'; 
+}
+.container_footer{
+flex-direction: column;
+}
+.logo_footer{
+width: 100px;
+height: 100px;  
+position: relative; 
+margin:0 auto; 
+top: -50px;
+}
+.box__footer{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+}
+.box__footer a:hover{
+opacity: 0.8;
+}
+.box__footer a{
+font-size: 15px;
+margin-top: 20px;
+color: white;
+}
+.box_copyright{
+color: white;
+text-align: center;
+display: flex;
+justify-content: space-around;
+font-size: 13px;
+margin-top: 50px;
+}
+.box_copyright p:hover{
+opacity: 0.8;
+}
+/*CONFIGURACION PAGINA NOSOTROS*/
+.section_A { /*Primer Div*/
+  background-color: #4c00d8;
+  display: flex;
+  height: 500px;
+  }
+  .foto_unon{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  z-index: 1;
+  border-radius: 0px;/*Me falta eliminar el borde redondeado*/
+  border: none;
+  }
+  .section_A img{ /*Ajuste y posicionamiento de la primera imagen*/
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  z-index: 2;
+  }
+  .texto_uno_nosotros{
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 10%;
+  margin-right: 50%;
+ font-family: 'hellix';
+  color: white;
+  text-align: left;
+  font-size: 25px; 
+  }
+  .section_B{ /*Segundo Div*/
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  background-color:white;
+  }
+  .section_B h2{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family:'Mustica';
+  font-size: 35px;
+  text-align: center;
+  }
+  .section_B p{
+  position: relative;
+  margin-top: 20%;
+  margin-left: 29%;
+  margin-right: 29%;
+  font-family:'Mustica';
+  text-align: center;
+  }
+  .section_C{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  background-color:rgb(219, 219, 219);
+  }
+  .video_uno iframe{
+  position: relative;
+  margin-top: 42px;
+  margin-left: 12%;
+  }
+  .section_C h1{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 40%;
+  font-family:'Mustica';
+  }
+  .section_C p{
+  position: relative;
+  margin-top: 130px;
+  margin-left: 10%;
+  margin-right: 170px;
+  font-family:'Mustica';
+  text-align: justify;
+  line-height: 2em;
+  }
+  .section_D{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 700px;
+  background-color: #8951e4;
+  }
+  .section_D h2{
+  position: absolute;
+  top: 7%;
+  text-align: justify;
+  font-family:'Mustica';
+  font-size: 35px;
+  font-weight: bolder;
+  color: white;
+  }
+  .white{  /*edición del último párrafo*/
+  position: absolute;  
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  margin: 0 auto;
+  font-family:'Mustica';
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  }
+  .container_n{
+  display: flex;
+  flex-direction: wrap;
+  color: white;
+  font-family: 'mustica';
+  justify-content: space-between;
+  margin: 350px auto;
+  text-align: center;
+  }
+  .n_44{
+margin-left: 100px;
+  }
+  .n_46{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .n_15{
+    margin-left: 30px;
+  }
+  .n_25{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .n_12{
+    margin-left: 100px;
+  }
+  .n_45{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+
+/*CONFIGURACION DE CURSOS*/
+  .cibersec {
+  background-color: white;
+  height: 550px;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+  .cibersec h2 {
+  position: absolute;
+  top: 10%;
+  left: 55px;
+  font-family:'Mustica';
+  font-weight: bolder;
+  font-size: 30px;
+color: #5400d8;
+  }
+  .cibersec input{
+  position: absolute;
+  top: 80%;
+  left: 60px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #5400d8;
+  color: white;
+  }
+  .cibersec input:hover{
+  transform: scale(1.1);
+  }
+  .widget_abro{
+    position:relative;
+  }
+  .widget_abro:hover{
+    transform: scale(1.1);
+  }
+  .widget_uno { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_uno img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_uno h3{
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_uno input{ /*Imagen titulo y botonde ir al curso*/
+  background: #5400d8;
+  width: 90px;
+  height: 25px; 
+  top: 150px;
+  left: 20px; 
+  font-family: 'mustica';
+  color: white;
+  cursor: pointer;
+  }
+  .widget_dos { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_dos img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_dos h3{
+    position: absolute;
+    top: 110px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_dos input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+  .widget_tres { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_tres img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_tres h3{
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_tres input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+  .widget_cuatro { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_cuatro img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+    border-radius: 20px;
+  }
+  .widget_cuatro h3{
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_cuatro input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+  .widget_cierro{
+    position:relative;
+  }
+  .widget_cierro:hover{
+    transform: scale(1.1);
+  }
+  .programacion_widget {
+    background-color: #5400d8;
+    height: 550px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .programacion_widget input:hover{
+    transform: scale(1.1);
+    }
+  .programacion_widget  h2 {
+    position: absolute;
+    top: 10%;
+    left: 55px;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+  }
+  .programacion_widget input{
+    position: absolute;
+    top: 80%;
+    left: 60px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    font-family:'Mustica';
+    background-color: #ffa412;
+    color: white;
+  }
+  .widget_puno { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_puno img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_puno h3{
+    position: absolute;
+    top: 65px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_puno input{ /*Imagen titulo y botonde ir al curso*/
+  background: #5400d8;
+  width: 90px;
+  height: 25px; 
+  top: 150px;
+  left: 20px; 
+  font-family: 'mustica';
+  color: white;
+  cursor: pointer;
+  }
+  .widget_pdos { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_pdos img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_pdos h3{
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_pdos input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+  .widget_ptres { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_ptres img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_ptres h3{
+    position: absolute;
+    top: 90px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_ptres input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+  .widget_pcuatro { /*Imagen titulo y botonde ir al curso*/
+    position:relative;
+    width: 250px;
+    height:200px;
+    margin: 20px;
+  }
+  .widget_pcuatro img{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+  }
+  .widget_pcuatro h3{
+    position: absolute;
+    top: 65px;
+    left: 21px;
+    margin-right: 20%;
+    font-family:'Mustica';
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  .widget_pcuatro input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+  }
+ .Hardware_widget  {
+  background-color: #ffa412;
+  height: 550px;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+  .Hardware_widget input:hover{
+    transform: scale(1.1);
+    }
+ .Hardware_widget h2 {
+      position: absolute;
+      top: 10%;
+      left: 55px;
+      font-family:'Mustica';
+      font-weight: bolder;
+      font-size: 30px;
+      color:  #5400d8;
+    }
+  .Hardware_widget input{
+      position: absolute;
+      top: 80%;
+      left: 60px;
+      width: 120px;
+      height: 30px;
+      font-size: 15px;
+      font-family:'Mustica';
+      background-color: #5400d8;
+      color: white;
+    }
+    .widget_huno { /*Imagen titulo y botonde ir al curso*/
+      position:relative;
+      width: 250px;
+      height:200px;
+      margin: 20px;
+    }
+    .widget_huno img{
+      position: absolute;
+      top:0%;
+      left: 0%;
+      width:100%;
+      height:100%;
+      border-radius: 20px;
+    }
+    .widget_huno h3{
+      position: absolute;
+      top: 90px;
+      left: 21px;
+      margin-right: 20%;
+      font-family:'Mustica';
+      font-weight: bolder;
+      font-size: 18px;
+      color: white;
+    }
+    .widget_huno input{ /*Imagen titulo y botonde ir al curso*/
+    background: #5400d8;
+    width: 90px;
+    height: 25px; 
+    top: 150px;
+    left: 20px; 
+    font-family: 'mustica';
+    color: white;
+    cursor: pointer;
+    }
+    .widget_hdos { /*Imagen titulo y botonde ir al curso*/
+      position:relative;
+      width: 250px;
+      height:200px;
+      margin: 20px;
+    }
+    .widget_hdos img{
+      position: absolute;
+      top:0%;
+      left: 0%;
+      width:100%;
+      height:100%;
+      border-radius: 20px;
+    }
+    .widget_hdos h3{
+      position: absolute;
+      top: 65px;
+      left: 21px;
+      margin-right: 20%;
+      font-family:'Mustica';
+      font-weight: bolder;
+      font-size: 18px;
+      color: white;
+    }
+    .widget_hdos input{ /*Imagen titulo y botonde ir al curso*/
+      background: #5400d8;
+      width: 90px;
+      height: 25px; 
+      top: 150px;
+      left: 20px; 
+      font-family: 'mustica';
+      color: white;
+      cursor: pointer;
+    }
+    .widget_htres { /*Imagen titulo y botonde ir al curso*/
+      position:relative;
+      width: 250px;
+      height:200px;
+      margin: 20px;
+    }
+    .widget_htres img{
+      position: absolute;
+      top:0%;
+      left: 0%;
+      width:100%;
+      height:100%;
+      border-radius: 20px;
+    }
+    .widget_htres h3{
+      position: absolute;
+      top: 65px;
+      left: 21px;
+      margin-right: 20%;
+      font-family:'Mustica';
+      font-weight: bolder;
+      font-size: 18px;
+      color: white;
+    }
+    .widget_htres input{ /*Imagen titulo y botonde ir al curso*/
+      background: #5400d8;
+      width: 90px;
+      height: 25px; 
+      top: 150px;
+      left: 20px; 
+      font-family: 'mustica';
+      color: white;
+      cursor: pointer;
+    }
+    .widget_hcuatro { /*Imagen titulo y botonde ir al curso*/
+      position:relative;
+      width: 250px;
+      height:200px;
+      margin: 20px;
+    }
+    .widget_hcuatro img{
+      position: absolute;
+      top:0%;
+      left: 0%;
+      width:100%;
+      height:100%;
+      border-radius: 20px;
+    }
+    .widget_hcuatro h3{
+      position: absolute;
+      top: 65px;
+      left: 21px;
+      margin-right: 20%;
+      font-family:'Mustica';
+      font-weight: bolder;
+      font-size: 18px;
+      color: white;
+    }
+    .widget_hcuatro input{ /*Imagen titulo y botonde ir al curso*/
+      background: #5400d8;
+      width: 90px;
+      height: 25px; 
+      top: 150px;
+      left: 20px; 
+      font-family: 'mustica';
+      color: white;
+      cursor: pointer;
+    }
+  .llinux{
+      background-color: white;
+      height: 550px;
+      display: flex; 
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      }
+      .llinux input:hover{
+        transform: scale(1.1);
+        }
+  .llinux h2 {
+        position: absolute;
+        top: 10%;
+        left: 55px;
+        font-family:'Mustica';
+        font-weight: bolder;
+        font-size: 30px;
+        color:  #5400d8;
+      }
+  .llinux input{
+        position: absolute;
+        top: 80%;
+        left: 60px;
+        width: 120px;
+        height: 30px;
+        font-size: 15px;
+        font-family:'Mustica';
+        background-color: #ffa412;
+        color: white;
+      }
+  .widget_lluno { /*Imagen titulo y botonde ir al curso*/
+  position:relative;
+  width: 250px;
+  height:200px;
+  margin: 20px;
+  }
+  .widget_lluno img{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width:100%;
+  height:100%;
+  border-radius: 20px;
+  }
+      .widget_lluno h3{
+        position: absolute;
+        top: 65px;
+        left: 21px;
+        margin-right: 20%;
+        font-family:'Mustica';
+        font-weight: bolder;
+        font-size: 18px;
+        color: white;
+      }
+      .widget_lluno input{ /*Imagen titulo y botonde ir al curso*/
+      background: #5400d8;
+      width: 90px;
+      height: 25px; 
+      top: 150px;
+      left: 20px; 
+      font-family: 'mustica';
+      color: white;
+      cursor: pointer;
+      }
+      .widget_lldos { /*Imagen titulo y botonde ir al curso*/
+        position:relative;
+        width: 250px;
+        height:200px;
+        margin: 20px;
+      }
+      .widget_lldos img{
+        position: absolute;
+        top:0%;
+        left: 0%;
+        width:100%;
+        height:100%;
+        border-radius: 20px;
+      }
+      .widget_lldos h3{
+        position: absolute;
+        top: 90px;
+        left: 21px;
+        margin-right: 20%;
+        font-family:'Mustica';
+        font-weight: bolder;
+        font-size: 18px;
+        color: white;
+      }
+      .widget_lldos input{ /*Imagen titulo y botonde ir al curso*/
+        background: #5400d8;
+        width: 90px;
+        height: 25px; 
+        top: 150px;
+        left: 20px; 
+        font-family: 'mustica';
+        color: white;
+        cursor: pointer;
+      }
+      .widget_lltres { 
+        position:relative;
+        width: 250px;
+        height:200px;
+        margin: 20px;
+      }
+      .widget_lltres img{
+        position: absolute;
+        top:0%;
+        left: 0%;
+        width:100%;
+        height:100%;
+        border-radius: 20px;
+      }
+      .widget_lltres h3{
+        position: absolute;
+        top: 90px;
+        left: 21px;
+        margin-right: 20%;
+        font-family:'Mustica';
+        font-weight: bolder;
+        font-size: 18px;
+        color: white;
+      }
+      .widget_lltres input{ 
+        background: #5400d8;
+        width: 90px;
+        height: 25px; 
+        top: 150px;
+        left: 20px; 
+        font-family: 'mustica';
+        color: white;
+        cursor: pointer;
+      }
+      .widget_llcuatro { 
+        position:relative;
+        width: 250px;
+        height:200px;
+        margin: 20px;
+      }
+      .widget_llcuatro img{
+        position: absolute;
+        top:0%;
+        left: 0%;
+        width:100%;
+        height:100%;
+        border-radius: 20px;
+      }
+      .widget_llcuatro h3{
+        position: absolute;
+        top: 65px;
+        left: 21px;
+        margin-right: 20%;
+        font-family:'Mustica';
+        font-weight: bolder;
+        font-size: 18px;
+        color: white;
+      }
+      .widget_llcuatro input{
+        background: #5400d8;
+        width: 90px;
+        height: 25px; 
+        top: 150px;
+        left: 20px; 
+        font-family: 'mustica';
+        color: white;
+        cursor: pointer;
+        }  
+/* AQUÍ COMIENZA LA PÁGINA DEL CURSO DE CIBERSEGURIDAD,PROGRAMACIÓN,
+    LINUXBASIC Y HARDWARE-HACKING*/
+.cibersec_uno{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 40px 20px;
+ }
+.widget_uno_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_dos_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_tres_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_cuatro_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_cinco_ciber{
+display: flex;
+margin: 20px auto;
+}  
+.widget_seis_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_siete_ciber{
+display: flex;
+margin: 20px auto;
+}
+.widget_ocho_ciber{
+display: flex;
+margin: 20px auto;
+}
+.img_ciber{
+width: 65%;
+height: 450px;
+border-radius: 20px;
+display: flex;
+margin: 40px auto;
+}
+.img_cibersec h1{
+font-family: 'mustica';
+color: #4c00d8;
+font-size: 25px;
+margin: 30px 100px
+}
+.img_cibersec p{
+font-family: 'mustica';
+color: white;
+font-size: 25px;
+position: relative;
+top: -220px;
+left: 290px;
+}
+.img_cibersec input{
+background: #ffa412;
+position: relative;
+top: -180px;
+left: 290px;
+font-size: 17px;
+width: 120px;
+height: 30px;
+cursor: pointer;
+color: #4804D9;
+font-family: 'mustica';
+}
+/*CONFIGURACION TRABAJA CON NOSOTROS*/
+.seccion_uno{
+  margin: 40px 100px;
+  }
+  .seccion_uno p{
+  font-family: 'mustica';
+  }
+  .seccion_uno h1{
+  color: #5400d8;
+  font-family: 'mustica';
+  }
+  .seccion_uno input{
+  background: #D3BDF2;
+  font-family: 'mustica';
+  height: 20px;
+  margin: 5px 10px;
+  cursor: pointer;
+  }
+  .seccion_uno input:hover{
+  transform: scale(1.1);
+  color: #5400d8;
+  }
+  .seccion_uno select{
+  background: #D3BDF2;
+  border-radius: 20px;
+  border: none;
+  height: 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  }
+  .seccion_dos img{
+  width: 200mm;
+  height: 165mm;
+  float: right;
+  margin: -435px -100px;
+  border-radius: 5px;
+  }
+.file input{ /*CONFIGURACION DE BOTON FILE PARA DARLE ESTILO*/
+display: none;
+}
+.file label{
+display: block;
+margin: 0 80px;
+border-radius: 20px;
+background: #D3BDF2;
+width: 150px;
+height: 20px;
+cursor: pointer;
+text-align: center;
+font-family: 'mustica';
+font-size: 15px;
+}
+
+/*Aquí inicia el BLOG*/
+  .section_blog{
+  margin: 0 180px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /*Otorgar espacio entre las tarjetas*/
+  font-family:'Hellix';
+  }
+  .card_programacion_uno{
+  background-color: #5400d8;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: white;
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_uno input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #ffa412;
+  color: white;
+  }
+  .section_blog h2{ 
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family:'Hellix';
+  font-weight: lighter;
+  }
+  .section_blog p{ 
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family:'Mustica';
+  }
+.boton_like {/*botón de like con hover para que se rellene cuando pase el ratón por encima*/
+position: absolute;
+margin-top: 50px;
+margin-left: 20px;
+width: 40px;
+height: 40px;
+  }
+.boton_like:hover {
+  transform: scale(1.1);/*para que el boton sobre salga al pasar por encima el cursor*/
+}
+  .boton_comment {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 40px;
+  height: 40px;
+  }
+  .boton_comment:hover {
+  transform: scale(1.1);
+  }
+  .card_programacion_dos{
+  background-color: #D3BDF2;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: black;
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_dos input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #5400d8;
+  color: white;
+  }
+  .card_programacion_tres{
+  background-color: #5400d8;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: white;
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_tres input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #ffa412;
+  color: white;
+  }
+  .card_programacion_cuatro{
+  background-color: hsl(265, 67%, 85%);
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: black;
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_cuatro input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #5400d8;
+  color: white;
+  }
+  .card_programacion_cinco{
+  background-color: #ffa412;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: black; 
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_cinco input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #5400d8;
+  color: white;
+  }
+  .card_programacion_seis{
+  background-color: #D3BDF2;
+  width: 280px;
+  height: 350px;
+  border-radius: 20px;
+  color: black;
+  margin: 80px 10px;
+  min-width: 250px;
+  }
+  .card_programacion_seis input{
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family:'Mustica';
+  background-color: #5400d8;
+  color: white;
+  }
+
+/*CONFIGURACION DE PAGINA AREA CLIENTE*/
+.container_formulario{
+display: flex;
+justify-content: center;
+}
+.vl {
+border: 1px solid #a3a3a4;
+height: 200px;
+margin-top: 80px;
+}
+.inicio_sesion{
+margin: 50px 150px;
+margin-bottom: 200px;
+}
+.inicio_sesion h2{
+font-family:'Mustica';
+color: #5400d8;
+}
+.inicio_sesion p{
+font-family:'Mustica';
+}
+.inicio_sesion input{
+background: #D3BDF2;
+}
+.inicio_sesion input:hover{
+transform: scale(1.1);
+background: #D3BDF2;
+color: #5400d8;
+}
+.registro{
+margin: 50px 150px;
+margin-bottom: 200px;
+}
+.registro h2{
+font-family:'Mustica';
+color: #5400d8
+}
+.registro p{
+font-family:'Mustica';
+}
+.registro input{
+background: #D3BDF2;
+}
+.registro input:hover{
+transform: scale(1.1);
+background: #D3BDF2;
+color: #5400d8;
+}
+.boton_formulario input{
+color: white;
+background: #5400d8;
+font-family: 'mustica';
+height: 25px;
+}
+.sesion select{
+background: #D3BDF2;
+border-radius: 20px;
+border: none;
+}
+/*Configuracion de Responsive*/
+@media screen and (max-width:1200px){
+
+  .texto_uno{
+  position: absolute;
+  transform: translate(10%, -130%);
+  font-size: 30px;
+  }
+  .boton_uno{
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  }
+  .logo{
+  margin-left: 20px;
+  }
+  .foto_home{
+  width: 100%;
+  height: 100%;
+  }
+  nav{
+  font-size: 14px;
+  }
+  .user_area{/*icon de usuario*/
+  width: 70px;
+  height: 60px;
+  margin-right: 20px;
+  }
+  .box__footer a{
+    font-size: 11px;
+    }
+    footer{
+    width: 100%;
+    }
+    .boton_like { /*BOTON DE BLOG*/
+      position: absolute;
+      margin-top: 40px;
+      margin-left: 20px;
+    }
+.boton_comment { /*BOTON DE BLOG*/
+position: relative;
+margin-top: 40px;
+margin-left: 60px;
+}
+/*RESPONSIVE PAGINA DE NOSOTROS*/
+.texto_uno_nosotros{ /*Texto de pagina nosotros*/
+margin-top: 20%;
+margin-left: 10%;
+font-size: 22px; 
+}
+.section_A img{ /*Ajuste y posicionamiento de la primera imagen de pagina nosotro*/
+width: 350px;
+height: 400px;
+flex-wrap: wrap;
+  }
+.section_B{ /*Segundo Div*/
+height: 400px;
+background-color:white;
+}
+.section_B h2{
+margin-top: 10%;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 35px;
+}
+.section_B p{
+margin-top: 22%;
+margin-left: 19%;
+margin-right: 19%;
+font-size: 19px;
+}.section_C{
+  height: 400px;
+  }
+  .video_uno iframe{
+ width: 450px;
+ height: 280px;
+float: left;
+  }
+  .section_C h1{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 35%;
+  }
+  .section_C p{
+ text-align: center;
+  }
+  .section_D{
+    height:500px;
+    background-color: #8951e4;
+    }
+    .section_D h2{
+    top: 7%;
+    font-size: 25px;
+    color: white;
+    }
+      .container_n{
+      margin: 200px auto;
+     font-size: 14px;
+      }
+      .n_44{
+    margin-left: 30px;
+      }
+      .n_46{
+        margin-left: 30px;
+        margin-top: 100px;
+      }
+      .n_15{
+        margin-left: 30px;
+      }
+      .n_25{
+        margin-left: 30px;
+        margin-top: 100px;
+      }
+      .n_12{
+        margin-left: 30px;
+      }
+      .n_45{
+        margin-left: 30px;
+        margin-top: 100px;
+      }
+       /*RESPONSIVE PARA PÁGINA CURSOS*/
+
+       /*(esta será la primera sección de ciberseguridad)*/
+       .cibersec{
+        height:450px;
+      }
+
+      .widget_uno {
+        margin-top: 135px; 
+      }
+
+      .widget_dos {
+        margin-top: 135px;
+      }
+      
+      .widget_tres {
+        margin-top: 135px;
+      }
+
+      .widget_cuatro{
+        visibility: hidden;
+      }
+
+      .widget_abro{
+        margin-top: 139px;
+      }
+
+      .widget_cierro{
+        margin-left: 92%;
+        margin-top: 53px;
+        position:absolute;
+      }
+       
+      .ver {
+        margin-left: 5%;
+        margin-top: 2%;
+        position: relative;  
+      }
+
+      .widget_abro:hover{
+        transform: scale(1.1); /*Aquí se deben agregar los hover para los botones de cierre y apertura*/
+      }
+
+      .widget_cierro:hover{
+        transform: scale(1.1);
+      }
+
+      /*esta es la seccion de programación*/
+      .programacion_widget{
+        height:450px;
+      }
+
+      .widget_puno {
+        margin-top: 135px; 
+      }
+
+      .widget_pdos {
+        margin-top: 135px;
+      }
+      
+      .widget_ptres {
+        margin-top: 135px;
+      }
+
+      .widget_pcuatro{
+        visibility: hidden;
+      }
+       
+      /*Esta es la sección de hardware*/
+
+      .Hardware_widget{
+        height:450px;
+      }
+
+      .widget_huno {
+        margin-top: 135px; 
+      }
+
+      .widget_hdos {
+        margin-top: 135px;
+      }
+      
+      .widget_htres {
+        margin-top: 135px;
+      }
+
+      .widget_hcuatro{
+        visibility: hidden;
+      }
+       
+
+       /*Esta es la sección de Linux*/
+
+       .llinux{
+        height:450px;
+      }
+
+      .widget_lluno {
+        margin-top: 135px; 
+      }
+
+      .widget_lldos {
+        margin-top: 135px;
+      }
+      
+      .widget_lltres {
+        margin-top: 135px;
+      }
+
+      .widget_llcuatro{
+        visibility: hidden;
+      }
+      /*CONFIGURACION CIBER, HADWARE,LINUX,PROGRAMACION*/
+      .img_cibersec p{
+        font-size: 25px;
+        position: relative;
+        top: -220px;
+        left: 230px;
+        }
+        .img_cibersec input{
+        position: relative;
+        top: -180px;
+        left: 250px;
+        font-size: 17px;
+        width: 120px;
+        height: 30px;
+        }
+  }
+  @media screen and (max-width:720px){
+  .texto_uno{
+  position: absolute;
+  transform: translate(10%, -150%);
+  font-size: 13px;
+  }
+  .boton_uno{
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  }
+  .logo{
+  margin-left: 30px;
+  width: 90px;
+  height: 80px;
+  }
+  .foto_home{
+  width: 100%;
+  height: 100%;
+  }
+  nav{
+  font-size: 10px;
+  display: flex;
+  }
+  .container{
+  max-width: 100%;
+  }
+  .user_area{/*icon de usuario*/
+  width: 60px;
+  height: 50px;
+  margin-right: 40px;
+  }
+  input{
+  width: 100px;
+  height: 20px;
+  position: relative;
+  left: 30px;
+  }
+  footer{
+  width: 100%;
+  }
+  .inicio_sesion{ /*configuracion responsive de AREA CLIENTE*/
+  margin: 50px 80px;
+  margin-bottom: 200px;
+  font-size: 10px;
+  }
+  .boton_formulario input{/*configuracion responsive de AREA CLIENTE*/
+  width: 60px;
+  height: 20px;
+  font-size: 8px;
+  }
+  .registro{/*configuracion responsive de AREA CLIENTE*/
+  margin: 50px 80px;
+  margin-bottom: 200px;
+  font-size: 10px;
+  }
+  .seccion_dos img{
+    visibility: hidden;
+  }
+  .seccion_uno{
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 85px;
+  }
+  .boton_like { /*BOTON DE BLOG*/
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .boton_comment { /*BOTON DE BLOG*/
+    position: relative;
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+.seccion_uno{
+margin: 40px 30px;
+}
+/*RESPONSIVE PAGINA DE NOSOTROS*/
+.texto_uno_nosotros{ /*Texto de pagina nosotros*/
+margin-top: 10%;
+margin-left: 8%;
+font-size: 16px; 
+}
+.section_A img{ /*Ajuste y posicionamiento de la primera imagen de pagina nosotro*/
+width: 200px;
+height: 250px;
+flex-wrap: wrap;
+}
+.section_A { /*Primer Div*/
+background-color: #4c00d8;
+height: 350px;
+}
+.section_B{ /*Segundo Div*/
+height: 350px;
+}
+.section_B h2{
+margin-top: 10%;
+margin-left: 10%;
+margin-right: 10%;
+font-size: 25px;
+}
+.section_B p{
+margin-top: 30%;
+margin-left: 19%;
+margin-right: 19%;
+font-size: 17px;
+}
+.section_C{
+  height: 300px;
+  }
+  .video_uno iframe{
+ width: 380px;
+ height: 200px;
+position: absolute;
+  }
+  .section_C h1{
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 5%;
+  }
+  .section_C p{
+ visibility: hidden;
+  }
+  .section_D{
+    height:500px;
+    background-color: #8951e4;
+    }
+    .section_D h2{
+    top: 7%;
+    font-size: 25px;
+    color: white;
+    }
+    .white{  /*edición del último párrafo*/
+      top: 15%;
+      left: 10%;
+      right: 10%;
+      font-size: 17px;
+      }
+      .container_n{
+      margin: 300px auto;
+     font-size: 8px;
+      }
+      .n_44{
+    margin-left: 20px;
+      }
+      .n_46{
+        margin-left: 20px;
+        margin-top: 70px;
+      }
+      .n_15{
+        margin-left: 20px;
+      }
+      .n_25{
+        margin-left: 20px;
+        margin-top: 70px;
+      }
+      .n_12{
+        margin-left: 20px;
+      }
+      .n_45{
+        margin-left: 20px;
+        margin-top: 70px;
+      }
+  .card_precios_uno input{
+  position: relative;
+  left: 3px;
+  }
+  .card_precios_dos input{
+    position: relative;
+    left: 3px;
+    }
+    .card_precios_tres input{
+      position: relative;
+      left: 3px;
+      }
+              /*Aquí empieza programación de CURSOS*/
+
+              .programacion_widget {
+                height: 400px;
+              }
+        
+              .programacion_widget h2 {
+                margin-left: 8%;
+                margin-top: -5%;
+              }
+        
+              .widget_puno{
+                margin-top: 19%;
+                margin-right: 14%;
+              }
+        
+              .widget_pdos {
+                visibility: hidden;
+              }
+              
+              .widget_ptres {
+                visibility: hidden;
+              }
+        
+              .widget_pcuatro{
+                visibility: hidden;
+              }
+        
+          .widget_abro{
+            margin-top: 18%;
+          }
+        
+          .widget_cierro{
+            margin-left: 82%;
+            margin-top: -6%;
+            position:absolute;
+          }
+           
+          .ver {
+            margin-left: 22%;
+            margin-top: 1%;
+            position: relative;  
+          }
+        
+          /*Aquí comienza Hardware Hacking*/
+        
+          .Hardware_widget {
+            height: 400px;
+          }
+        
+          .Hardware_widget h2 {
+            margin-left: 2%;
+            margin-top: -5%;
+          }
+        
+          .widget_huno{
+            margin-top: 19%;
+            margin-right: 14%;
+          }
+        
+          .widget_hdos {
+            visibility: hidden;
+          }
+          
+          .widget_htres {
+            visibility: hidden;
+          }
+        
+          .widget_hcuatro{
+            visibility: hidden;
+          }
+        
+        .widget_abro{
+        margin-top: 18%;
+        }
+        
+        .widget_cierro{
+        margin-left: 82%;
+        margin-top: -6%;
+        position:absolute;
+        }
+        
+        .ver {
+        margin-left: 22%;
+        margin-top: 1%;
+        position: relative;  
+        }
+        
+          /*Aquí comienza Linux Basics*/
+        
+          .llinux {
+            height: 400px;
+          }
+        
+          .llinux h2 {
+            margin-left: 14%;
+            margin-top: -5%;
+          }
+        
+          .widget_lluno{
+            margin-top: 19%;
+            margin-right: 14%;
+          }
+        
+          .widget_lldos {
+            visibility: hidden;
+          }
+          
+          .widget_lltres {
+            visibility: hidden;
+          }
+        
+          .widget_llcuatro{
+            visibility: hidden;
+          }
+        
+        .widget_abro{
+        margin-top: 18%;
+        }
+        
+        .widget_cierro{
+        margin-left: 82%;
+        margin-top: -6%;
+        position:absolute;
+        }
+        
+        .ver {
+        margin-left: 20%;
+        margin-top: -2%;
+        position: relative;}
+      /*RESPONSIVE DE CONFIGURACION DE CIBERSEGURIDAD, PROGRAMACION, HARDWARE, LINUX*/
+      .img_ciber{
+        width: 73%;
+        height: 250px;
+        margin: 40px auto;
+        }
+        .img_cibersec h1{
+        font-size: 19px;
+        margin: 0 190px
+        }    
+            .img_cibersec p{
+              font-size: 15px;
+              position: relative;
+              top: -160px;
+              left: 100px;
+              }
+              .img_cibersec input{
+              position: relative;
+              top: -150px;
+              left: 100px;
+              font-size: 13px;
+              width: 100px;
+              height: 20px;
+              }
+  }
+  @media screen and (max-width:414px){
+  .texto_uno{
+  position: absolute;
+  transform: translate(10%, -150%);
+  font-size: 13px;
+  }
+  .boton_uno{
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  }
+  .logo{
+  margin-left: 20px;
+  width: 60px;
+  height: 50px;
+  }
+  .foto_home{
+  width: 100%;
+  height: 100%;
+  }
+  nav{
+  font-size: 9px;
+  display: flex;
+  }
+  .container{
+  max-width: 100%;
+  }
+  .user_area{/*icon de usuario*/
+  width: 45px;
+  height: 35px;
+  margin-right: 40px;
+  }
+  input{
+  width: 80px;
+  height: 18px;
+  position: relative;
+  left: 20px;
+  }
+  .linea_morada{
+  font-size: 9px;
+  }
+  .box__footer a{
+  font-size: 9px;
+  }
+  .inicio_sesion{ /*configuracion responsive de AREA CLIENTE*/
+  margin: 50px 70px;
+  margin-bottom: 200px;
+  font-size: 10px;
+  }
+  .boton_formulario input{/*configuracion responsive de AREA CLIENTE*/
+  width: 60px;
+  height: 20px;
+  font-size: 8px;
+  }
+  .registro{/*configuracion responsive de AREA CLIENTE*/
+  margin: 50px 80px;
+  margin-bottom: 200px;
+  font-size: 10px;
+  }
+  .seccion_dos img{
+  visibility: hidden;
+  }
+  .seccion_uno{
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 85px;
+  }
+  .boton_like { /*BOTON DE BLOG*/
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .boton_comment { /*BOTON DE BLOG*/
+    position: relative;
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  /*RESPONSIVE PAGINA DE NOSOTROS*/
+  .texto_uno_nosotros{ /*Texto de pagina nosotros*/
+    margin-top: 12%;
+   margin-left: 5%;
+    font-size: 8px; 
+    }
+  .section_A img{ /*Ajuste y posicionamiento de la primera imagen de pagina nosotro*/
+width: 150px;
+height: 170px;
+margin-top: -140px;
+margin-left: 30px;
+      }
+.section_A { /*Primer Div*/
+  background-color: #4c00d8;
+  height: 200px;
+  }
+  .section_B{ /*Segundo Div*/
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color:white;
+    }
+    .section_B h2{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 22px;
+    }
+    .section_B p{
+    margin-top: 45%;
+    margin-left: 19%;
+    margin-right: 19%;
+    font-size: 12px;
+    }
+    .section_C{
+      height: 300px;
+      }
+      .video_uno iframe{
+     width: 280px;
+     height: 170px;
+     margin-left: 80px;
+      }
+      .section_C h1{
+      position: absolute;
+      margin-top: 240px;
+      margin-left: 5%;
+      font-family:'Mustica';
+      font-weight: bold;
+      }
+      .section_C p{
+     visibility: hidden;
+      }
+      .section_D{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height:500px;
+        background-color: #8951e4;
+        }
+        .section_D h2{
+        position: absolute;
+        top: 7%;
+        font-size: 25px;
+        color: white;
+        }
+        .white{  /*edición del último párrafo*/
+          top: 15%;
+          left: 10%;
+          right: 10%;
+          font-size: 17px;
+          }
+          .container_n{
+          margin: 300px auto;
+         font-size: 8px;
+          }
+          .n_44{
+        margin-left: 20px;
+          }
+          .n_46{
+            margin-left: 20px;
+            margin-top: 70px;
+          }
+          .n_15{
+            margin-left: 20px;
+          }
+          .n_25{
+            margin-left: 20px;
+            margin-top: 70px;
+          }
+          .n_12{
+            margin-left: 20px;
+          }
+          .n_45{
+            margin-left: 20px;
+            margin-top: 70px;
+          }
+          /*Aquí empieza programación de CURSOS*/
+          .cibersec h2{
+            font-size: 15px;
+          }
+      .programacion_widget {
+        height: 400px;
+      }
+
+      .programacion_widget h2 {
+        margin-left: 8%;
+        margin-top: -5%;
+        font-size: 15px;
+      }
+
+      .widget_puno{
+        margin-top: 19%;
+        margin-right: 14%;
+      }
+
+      .widget_pdos {
+        visibility: hidden;
+      }
+      
+      .widget_ptres {
+        visibility: hidden;
+      }
+
+      .widget_pcuatro{
+        visibility: hidden;
+      }
+
+  .widget_abro{
+    margin-top: 18%;
+  }
+
+  .widget_cierro{
+    margin-left: 82%;
+    margin-top: -6%;
+    position:absolute;
+  }
+   
+  .ver {
+    margin-left: 22%;
+    margin-top: 1%;
+    position: relative;  
+  }
+
+  /*Aquí comienza Hardware Hacking*/
+
+  .Hardware_widget {
+    height: 400px;
+  }
+
+  .Hardware_widget h2 {
+    margin-left: 2%;
+    margin-top: -5%;
+    font-size: 15px;
+  }
+
+  .widget_huno{
+    margin-top: 19%;
+    margin-right: 14%;
+  }
+
+  .widget_hdos {
+    visibility: hidden;
+  }
+  
+  .widget_htres {
+    visibility: hidden;
+  }
+
+  .widget_hcuatro{
+    visibility: hidden;
+  }
+
+.widget_abro{
+margin-top: 18%;
+}
+
+.widget_cierro{
+margin-left: 82%;
+margin-top: -6%;
+position:absolute;
+}
+
+.ver {
+margin-left: 22%;
+margin-top: 1%;
+position: relative;  
+}
+
+  /*Aquí comienza Linux Basics*/
+
+  .llinux {
+    height: 400px;
+  }
+
+  .llinux h2 {
+    margin-left: 14%;
+    margin-top: -5%;
+    font-size: 15px;
+  }
+
+  .widget_lluno{
+    margin-top: 19%;
+    margin-right: 14%;
+  }
+
+  .widget_lldos {
+    visibility: hidden;
+  }
+  
+  .widget_lltres {
+    visibility: hidden;
+  }
+
+  .widget_llcuatro{
+    visibility: hidden;
+  }
+
+.widget_abro{
+margin-top: 18%;
+}
+
+.widget_cierro{
+margin-left: 82%;
+margin-top: -6%;
+position:absolute;
+}
+
+.ver {
+margin-left: 20%;
+margin-top: -2%;
+position: relative;}
+  }
+  /*Aquí se encuentra parte del script del directorio home*/
+
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  fieldset, img, abbr, acronym {
+    border: 0;
+  }
+  
+  address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  caption, th {
+    text-align: left;
+  }
+  
+
+  
+  a {
+    outline: none;
+  }
+  
+ 
+  
+  .slider-itt {
+    position: relative;
+    height: 100vh;
+  }
+  .slider-itt .images {
+    height: 87vh;
+    width: 100vw;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in-out, width .5s ease-in-out, height .5s ease-in-out;
+    transition: opacity 2s ease-in-out, width .5s ease-in-out, height .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider-itt .images .tit {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    display: block;
+    top: 50px;
+    font-weight: lighter;
+    color: white;
+    font-size: 1.5rem;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+  
+  .slider-itt .images:nth-of-type(odd) .tit {
+    left: 0;
+  }
+  
+  .slider-itt .images:nth-of-type(even) .tit {
+    right: 0;
+  }
+  
+  .slider-itt .images.active {
+    opacity: 1;
+  }
+  
+  .slider-itt .images.active:nth-of-type(odd) .tit {
+    left: 50px;
+    opacity: 1;
+  }
+  
+  .slider-itt .images.active:nth-of-type(even) .tit {
+    right: 50px;
+    opacity: 1;
+  }
+  
+  .slider-itt img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+    background: transparent;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .slider-itt .prev, .slider-itt .next {
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            border: none;
+
+    background: #d3bdf269;
+    width: 70px;
+    height: 40px;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .slider-itt .prev span, .slider-itt .next span {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .slider-itt .prev span img, .slider-itt .next span img {
+    opacity: 0;
+  }
+  
+  .slider-itt .prev:hover, .slider-itt .next:hover {
+    background-color: #D3BDF2;
+  }
+  
+  .slider-itt .prev:hover [class*="icono"], .slider-itt .next:hover [class*="icono"] {
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .slider-itt .prev {
+    left: -150px;
+  }
+  
+  .slider-itt .prev span {
+    right: 0;
+  }
+  
+  .slider-itt .prev:hover span {
+    right: -75px;
+    opacity: 1;
+  }
+  
+  .slider-itt .prev:hover span img {
+    opacity: 1;
+  }
+  
+  .slider-itt .next {
+    right: -150px;
+  }
+  
+  .slider-itt .next span {
+    left: 0;
+  }
+  
+  .slider-itt .next:hover span {
+    left: -75px;
+    opacity: 1;
+  }
+  
+  .slider-itt .next:hover span img {
+    opacity: 1;
+  }
+  
+  .slider-itt [class*="arrow"] {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: #4804D9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border-width: 4px 4px 0 0;
+    border-style: solid;
+    margin: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .slider-itt [class*="arrow"]:after, .slider-itt [class*="arrow"]:before {
+    content: "";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .slider-itt [class*="arrow"]:before {
+    right: 0;
+    top: -3px;
+    position: absolute;
+    height: 4px;
+    -webkit-box-shadow: inset 0 0 0 32px;
+            box-shadow: inset 0 0 0 32px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 23px;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+  }
+  
+  .slider-itt [class*="arrow"][class*="-left"] {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .slider-itt [class*="arrow"][class*="-right"] {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  /*aquí estan las imagenes dentro del círculo de dentro de los botones inferiores*/
+  
+  .slider-itt .dots {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+  }
+  
+  /*aquí están los botones inferiores*/
+  .slider-itt .dots li {
+    width: 10px;
+    height: 10px;
+    background: #1b0140;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin: 0 6px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .slider-itt .dots li span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  border: none;
+  }
+  
+  .slider-itt .dots li.active {
+    background-color: #D3BDF2;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            border: none;
+    cursor: default;
+  }
+  
+  .slider-itt .dots li.active span {
+    display: none;
+  }
+  
+  .slider-itt .dots li:hover {
+    background-color: #D3BDF2;
+    border: none;
+  }
+  
+  .slider-itt .dots li:hover span {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  
+  .slider-itt:hover .next, .slider-itt:hover .prev, .slider-itt:hover .dots {
+    opacity: 1;
+  }
+  
+  .slider-itt:hover .next {
+    right: 50px;
+  }
+  
+  .slider-itt:hover .prev {
+    left: 50px;
+  }
+  
+  .slider-itt:hover .dots {
+    bottom: 50px;
+  }
+  /*# sourceMappingURL=styles.css.map */
